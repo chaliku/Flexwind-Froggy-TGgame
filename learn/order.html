@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="google-adsense-account" content="ca-pub-5896187408169408" />
+    <script src="../js/lesson-ads.js"></script>
+    <title id="orderTitle" class="translate">
+      Tailwind CSS Order Utilities | Flexwind Froggy
+    </title>
+    <meta
+      id="orderDescription"
+      class="translate"
+      name="description"
+      content="Learn how Tailwind CSS order utilities change the visual order of flex items without changing the HTML source order."
+    />
+    <link rel="canonical" href="https://flexwindfroggy.com/learn/order.html" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=PT+Sans&family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/learn.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">Flexwind Froggy</a>
+        <nav id="navLabel" class="site-nav translate" aria-label="Primary">
+          <a id="navPlay" class="translate" href="../index.html">Play</a
+          ><a id="navLearn" class="translate" href="order.html">Learn</a
+          ><a id="navPrivacy" class="translate" href="../privacy.html"
+            >Privacy</a
+          >
+        </nav>
+      </div>
+    </header>
+    <main>
+      <p id="eyebrow" class="eyebrow translate">Tailwind Flexbox lesson</p>
+      <h1 id="orderHeading" class="translate">Change the visual order</h1>
+      <p id="orderLead" class="lead translate">
+        <code>order-*</code> changes where a flex item appears among its
+        siblings. The HTML source stays in the same order, which is important
+        for reading and keyboard navigation.
+      </p>
+      <h2 id="utilities" class="translate">Utilities</h2>
+      <table class="utility-table">
+        <thead>
+          <tr>
+            <th id="classHeading" class="translate">Class</th>
+            <th id="whatItDoes" class="translate">What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>order-first</code></td>
+            <td id="orderFirst" class="translate">
+              Places the item before every normal ordered item.
+            </td>
+          </tr>
+          <tr>
+            <td><code>order-last</code></td>
+            <td id="orderLast" class="translate">
+              Places the item after every normal ordered item.
+            </td>
+          </tr>
+          <tr>
+            <td><code>order-none</code></td>
+            <td id="orderNone" class="translate">
+              Returns the item to the default order of zero.
+            </td>
+          </tr>
+          <tr>
+            <td><code>order-1</code></td>
+            <td id="orderOne" class="translate">
+              Sets an explicit order value of one.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 id="tryIt" class="translate">Try it</h2>
+      <p id="orderTry" class="translate">
+        Use order sparingly. It can make a visual adjustment at a breakpoint,
+        but the source order should still make sense without CSS.
+      </p>
+      <pre><code>&lt;section class="flex flex-col md:flex-row"&gt;
+  &lt;main class="order-1"&gt;Article&lt;/main&gt;
+  &lt;aside class="order-2 md:order-none"&gt;Related links&lt;/aside&gt;
+&lt;/section&gt;</code></pre>
+      <aside id="orderCallout" class="callout translate">
+        <strong>Accessibility note:</strong> visual order does not change
+        screen-reader or keyboard order. Keep the source order meaningful, then
+        use <code>order-*</code> only for presentation.
+      </aside>
+      <p>
+        <a id="practice" class="cta translate" href="../index.html"
+          >Practice in Flexwind Froggy</a
+        >
+      </p>
+      <h2 id="moreLessons" class="translate">More flexbox lessons</h2>
+      <ul class="lesson-links">
+        <li>
+          <a id="linkDirection" class="translate" href="direction.html"
+            >Flex direction</a
+          >
+        </li>
+        <li>
+          <a id="linkJustify" class="translate" href="justify.html"
+            >Justify content</a
+          >
+        </li>
+        <li>
+          <a id="linkItems" class="translate" href="items.html">Align items</a>
+        </li>
+        <li>
+          <a id="linkWrap" class="translate" href="wrap.html">Wrap items</a>
+        </li>
+        <li><a id="linkGap" class="translate" href="gap.html">Add gaps</a></li>
+        <li>
+          <a id="linkSelf" class="translate" href="self.html">Align one item</a>
+        </li>
+        <li>
+          <a id="linkContent" class="translate" href="content.html"
+            >Align wrapped lines</a
+          >
+        </li>
+      </ul>
+    </main>
+    <footer id="footer" class="site-footer translate">
+      Flexwind Froggy is a free Tailwind CSS Flexbox learning game.
+    </footer>
+    <script src="../js/messages.js"></script>
+    <script src="../js/learn-messages.js"></script>
+    <script src="../js/translator.js"></script>
+    <script>
+      translator.start(learnMessages);
+    </script>
+  </body>
+</html>

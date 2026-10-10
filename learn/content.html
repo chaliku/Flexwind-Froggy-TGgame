@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="google-adsense-account" content="ca-pub-5896187408169408" />
+    <script src="../js/lesson-ads.js"></script>
+    <title id="contentTitle" class="translate">
+      Tailwind CSS Align Content Utilities | Flexwind Froggy
+    </title>
+    <meta
+      id="contentDescription"
+      class="translate"
+      name="description"
+      content="Learn how Tailwind CSS content-start, content-center, content-between, and related utilities distribute wrapped flex lines."
+    />
+    <link
+      rel="canonical"
+      href="https://flexwindfroggy.com/learn/content.html"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=PT+Sans&family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/learn.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">Flexwind Froggy</a>
+        <nav id="navLabel" class="site-nav translate" aria-label="Primary">
+          <a id="navPlay" class="translate" href="../index.html">Play</a
+          ><a id="navLearn" class="translate" href="content.html">Learn</a
+          ><a id="navPrivacy" class="translate" href="../privacy.html"
+            >Privacy</a
+          >
+        </nav>
+      </div>
+    </header>
+    <main>
+      <p id="eyebrow" class="eyebrow translate">Tailwind Flexbox lesson</p>
+      <h1 id="contentHeading" class="translate">Distribute wrapped lines</h1>
+      <p id="contentLead" class="lead translate">
+        <code>content-*</code> distributes complete flex lines on the cross
+        axis. It only has visible space to work with when the container wraps
+        and has extra cross-axis room.
+      </p>
+      <h2 id="utilities" class="translate">Utilities</h2>
+      <table class="utility-table">
+        <thead>
+          <tr>
+            <th id="classHeading" class="translate">Class</th>
+            <th id="whatItDoes" class="translate">What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>content-start</code></td>
+            <td id="contentStart" class="translate">
+              Packs wrapped lines at the cross-axis start.
+            </td>
+          </tr>
+          <tr>
+            <td><code>content-center</code></td>
+            <td id="contentCenter" class="translate">
+              Centers the group of wrapped lines.
+            </td>
+          </tr>
+          <tr>
+            <td><code>content-between</code></td>
+            <td id="contentBetween" class="translate">
+              Places the first and last lines at each edge.
+            </td>
+          </tr>
+          <tr>
+            <td><code>content-around</code></td>
+            <td id="contentAround" class="translate">
+              Adds space around every wrapped line.
+            </td>
+          </tr>
+          <tr>
+            <td><code>content-evenly</code></td>
+            <td id="contentEvenly" class="translate">
+              Makes the space between and around lines equal.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 id="tryIt" class="translate">Try it</h2>
+      <p id="contentTry" class="translate">
+        For a tall, wrapping badge collection, <code>content-center</code> can
+        keep all rows together in the middle. Add <code>flex-wrap</code> and a
+        height before judging the result.
+      </p>
+      <pre><code>&lt;ul class="flex h-64 flex-wrap content-center gap-3"&gt;
+  &lt;li&gt;Tailwind&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+  &lt;li&gt;Flexbox&lt;/li&gt;
+  &lt;li&gt;Layout&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+      <aside id="contentCallout" class="callout translate">
+        <strong>Two different controls:</strong> <code>items-*</code> aligns
+        items inside each line; <code>content-*</code> positions the lines as a
+        group. With one line, <code>content-*</code> has no effect.
+      </aside>
+      <p>
+        <a id="practice" class="cta translate" href="../index.html"
+          >Practice in Flexwind Froggy</a
+        >
+      </p>
+      <h2 id="moreLessons" class="translate">More flexbox lessons</h2>
+      <ul class="lesson-links">
+        <li>
+          <a id="linkDirection" class="translate" href="direction.html"
+            >Flex direction</a
+          >
+        </li>
+        <li>
+          <a id="linkJustify" class="translate" href="justify.html"
+            >Justify content</a
+          >
+        </li>
+        <li>
+          <a id="linkItems" class="translate" href="items.html">Align items</a>
+        </li>
+        <li>
+          <a id="linkWrap" class="translate" href="wrap.html">Wrap items</a>
+        </li>
+        <li><a id="linkGap" class="translate" href="gap.html">Add gaps</a></li>
+        <li>
+          <a id="linkOrder" class="translate" href="order.html">Order items</a>
+        </li>
+        <li>
+          <a id="linkSelf" class="translate" href="self.html">Align one item</a>
+        </li>
+      </ul>
+    </main>
+    <footer id="footer" class="site-footer translate">
+      Flexwind Froggy is a free Tailwind CSS Flexbox learning game.
+    </footer>
+    <script src="../js/messages.js"></script>
+    <script src="../js/learn-messages.js"></script>
+    <script src="../js/translator.js"></script>
+    <script>
+      translator.start(learnMessages);
+    </script>
+  </body>
+</html>

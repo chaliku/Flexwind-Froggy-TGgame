@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="google-adsense-account" content="ca-pub-5896187408169408" />
+    <script src="../js/lesson-ads.js"></script>
+    <title id="selfTitle" class="translate">
+      Tailwind CSS Align Self Utilities | Flexwind Froggy
+    </title>
+    <meta
+      id="selfDescription"
+      class="translate"
+      name="description"
+      content="Learn Tailwind CSS self-start, self-center, self-end, self-stretch, and self-auto utilities for aligning one flex item."
+    />
+    <link rel="canonical" href="https://flexwindfroggy.com/learn/self.html" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=PT+Sans&family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/learn.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">Flexwind Froggy</a>
+        <nav id="navLabel" class="site-nav translate" aria-label="Primary">
+          <a id="navPlay" class="translate" href="../index.html">Play</a
+          ><a id="navLearn" class="translate" href="self.html">Learn</a
+          ><a id="navPrivacy" class="translate" href="../privacy.html"
+            >Privacy</a
+          >
+        </nav>
+      </div>
+    </header>
+    <main>
+      <p id="eyebrow" class="eyebrow translate">Tailwind Flexbox lesson</p>
+      <h1 id="selfHeading" class="translate">Align one flex item</h1>
+      <p id="selfLead" class="lead translate">
+        <code>self-*</code> lets one child override the container’s
+        <code>items-*</code> alignment on the cross axis. It is useful when one
+        item needs an intentional exception.
+      </p>
+      <h2 id="utilities" class="translate">Utilities</h2>
+      <table class="utility-table">
+        <thead>
+          <tr>
+            <th id="classHeading" class="translate">Class</th>
+            <th id="whatItDoes" class="translate">What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>self-auto</code></td>
+            <td id="selfAuto" class="translate">
+              Uses the container’s align-items value.
+            </td>
+          </tr>
+          <tr>
+            <td><code>self-start</code></td>
+            <td id="selfStart" class="translate">
+              Moves this item to the cross-axis start.
+            </td>
+          </tr>
+          <tr>
+            <td><code>self-center</code></td>
+            <td id="selfCenter" class="translate">
+              Centers this item on the cross axis.
+            </td>
+          </tr>
+          <tr>
+            <td><code>self-end</code></td>
+            <td id="selfEnd" class="translate">
+              Moves this item to the cross-axis end.
+            </td>
+          </tr>
+          <tr>
+            <td><code>self-stretch</code></td>
+            <td id="selfStretch" class="translate">
+              Stretches this item when its size allows it.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 id="tryIt" class="translate">Try it</h2>
+      <p id="selfTry" class="translate">
+        A message row can keep its avatar at the top while the action button is
+        centered. Apply <code>self-start</code> only to the avatar instead of
+        changing every child.
+      </p>
+      <pre><code>&lt;div class="flex items-center gap-3"&gt;
+  &lt;img class="self-start" src="avatar.png" alt="Ava"&gt;
+  &lt;p&gt;A message with more than one line.&lt;/p&gt;
+  &lt;button&gt;Reply&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+      <aside id="selfCallout" class="callout translate">
+        <strong>Choose the smallest scope:</strong> use
+        <code>items-*</code> when all children share an alignment; use
+        <code>self-*</code> for one deliberate exception.
+      </aside>
+      <p>
+        <a id="practice" class="cta translate" href="../index.html"
+          >Practice in Flexwind Froggy</a
+        >
+      </p>
+      <h2 id="moreLessons" class="translate">More flexbox lessons</h2>
+      <ul class="lesson-links">
+        <li>
+          <a id="linkDirection" class="translate" href="direction.html"
+            >Flex direction</a
+          >
+        </li>
+        <li>
+          <a id="linkJustify" class="translate" href="justify.html"
+            >Justify content</a
+          >
+        </li>
+        <li>
+          <a id="linkItems" class="translate" href="items.html">Align items</a>
+        </li>
+        <li>
+          <a id="linkWrap" class="translate" href="wrap.html">Wrap items</a>
+        </li>
+        <li><a id="linkGap" class="translate" href="gap.html">Add gaps</a></li>
+        <li>
+          <a id="linkOrder" class="translate" href="order.html">Order items</a>
+        </li>
+        <li>
+          <a id="linkContent" class="translate" href="content.html"
+            >Align wrapped lines</a
+          >
+        </li>
+      </ul>
+    </main>
+    <footer id="footer" class="site-footer translate">
+      Flexwind Froggy is a free Tailwind CSS Flexbox learning game.
+    </footer>
+    <script src="../js/messages.js"></script>
+    <script src="../js/learn-messages.js"></script>
+    <script src="../js/translator.js"></script>
+    <script>
+      translator.start(learnMessages);
+    </script>
+  </body>
+</html>
